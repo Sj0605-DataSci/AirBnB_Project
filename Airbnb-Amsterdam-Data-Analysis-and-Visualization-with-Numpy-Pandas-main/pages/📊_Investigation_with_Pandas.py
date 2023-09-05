@@ -9,7 +9,7 @@ from pandas.api.types import (
 from PIL import Image
 
 # Load the image
-image = Image.open('airbnblogo.svg.png')
+image = Image.open('Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas-main/airbnblogo.svg.png')
 st.image(image, width=150)
 
 st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
@@ -23,7 +23,7 @@ st.markdown(
 )
 
 
-image=Image.open('rooms.png')
+image=Image.open('Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas-main/rooms.png')
 width=750
 height=500
 image_new=image.resize((width,height))
@@ -119,5 +119,5 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-df = pd.read_csv("https://raw.githubusercontent.com/danushkhanna/Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas/main/pages/WK2_Airbnb_Amsterdam_listings_proj_solution.csv", index_col=0)
+df = pd.read_csv("Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas-main/pages/WK2_Airbnb_Amsterdam_listings_proj_solution.csv", index_col=0)
 st.dataframe(filter_dataframe(df))

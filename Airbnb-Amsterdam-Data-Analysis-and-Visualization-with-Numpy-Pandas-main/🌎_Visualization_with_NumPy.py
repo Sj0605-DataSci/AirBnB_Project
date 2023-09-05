@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 # Load the image
-image = Image.open('airbnblogo.svg.png')
+image = Image.open('Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas-main/airbnblogo.svg.png')
 st.image(image, width=150)
 
 st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
@@ -17,7 +17,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-image=Image.open('amsterdam.png')
+image=Image.open('Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas-main/amsterdam.png')
 width=750
 height=500
 image_new=image.resize((width,height))
@@ -25,16 +25,16 @@ st.image(image_new)
 
 st.markdown("Welcome to our charming Airbnb! We're thrilled to introduce you to our space that is the perfect getaway for those seeking a comfortable and peaceful stay. \n\nOur home is designed to cater to all your needs, and we take pride in providing our guests with an exceptional experience. As you step inside, you'll be welcomed by a cozy atmosphere that exudes warmth and relaxation. \n\nOne of the standout features of our Airbnb is the stunning visualization with NumPy. This unique feature allows you to explore different areas and visualize them on a map, giving you an immersive experience that you won't find anywhere else. \n\nWhether you're a solo traveler or a group of friends, our space is ideal for those looking for a comfortable and memorable stay. So why wait? Book your stay with us now and get ready to experience the best that Airbnb has to offer! \n\nHere we can see the dataframe created during this week's project.")
 
-# AN EDIT BY DANUSH KHANNA
+# AN EDIT BY SANYAM JAIN
 import streamlit as st
 import webbrowser
 
-st.sidebar.button("An edit by Danush Khanna", on_click=lambda: webbrowser.open_new_tab("https://www.linkedin.com/in/danush-khanna-ba4240239/"))
+st.sidebar.button("An edit by Sanyam Jain", on_click=lambda: webbrowser.open_new_tab("https://www.linkedin.com/in/sanyam-jain-a5a15a220/"))
 
 
 # Read dataframe
 dataframe = pd.read_csv(
-    "WK1_Airbnb_Amsterdam_listings_proj_solution.csv",
+    "Airbnb-Amsterdam-Data-Analysis-and-Visualization-with-Numpy-Pandas-main/WK1_Airbnb_Amsterdam_listings_proj_solution.csv",
     names=[
         "Airbnb Listing ID",
         "Price",
